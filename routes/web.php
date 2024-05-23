@@ -10,4 +10,3 @@ Route::post('/admin/categories', [AdminController::class, 'createCategory'])->na
 Route::delete('/admin/products/{id}', [AdminController::class, 'deleteProduct'])->name('admin.products.delete');
 
 Route::get('/', [ProductController::class, 'index'])->name('products.index');
-Route::get('/products/{id}', [ProductController::class, 'show'])->name('products.show');
